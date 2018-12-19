@@ -30,22 +30,11 @@
 				<div class="login-form__background">
 					<div class="login-form pt-30 pb-30">
 						<h1 class="text-center login-heading mt-0 pt-0">Регистрация</h1>
-						<form>
-							<div class="notify notify--error mb-20">Введите email</div>
-							<div class="notify notify--error mb-20">Неверный формат email</div>
-							<div class="notify notify--error mb-20">Введите пароль</div>
-							<div class="notify no-paddings">
-								<div class="notify no-radius-bottom notify--error">Данный email уже занят</div>
-								<div class="notify no-radius-top">
-									<p>Используйте другой email чтобы создать новый аккаунт.</p>
-									<p> Или воспользуйтесь
-										<a href="#!">восстановлением пароля </a>, чтобы войти на сайт.</p>
-								</div>
-							</div>
-							<input class="input-form-registration" name="email" type="email" placeholder="Email" />
-							<input class="input-form-registration" name="password" type="password" placeholder="Пароль" />
+						<form id="reg-form" action="success.html" novalidate>
+							<input id="fieldEmailReg" class="input-form-registration" name="email" type="email" placeholder="Email" data-required="required"/>
+							<input id="fieldPasswordReg" class="input-form-registration" name="password" type="password" placeholder="Пароль" data-required="required"/>
 							<div class="text-center pt-30">
-								<a class="button button--enter" href="#">Регистрация</a>
+								<input type="submit" class="button button--enter" value="Регистрация">
 							</div>
 						</form>
 					</div>
